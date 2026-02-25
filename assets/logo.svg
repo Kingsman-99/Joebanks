@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-label="Joebanks logo">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#31d0a0"/>
+      <stop offset="100%" stop-color="#ffd166"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="72" fill="#081522"/>
+  <rect x="18" y="18" width="284" height="284" rx="58" fill="none" stroke="url(#g)" stroke-width="8"/>
+  <path d="M77 220L131 124L167 181L207 110L243 220" fill="none" stroke="url(#g)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="131" cy="124" r="10" fill="#31d0a0"/>
+  <circle cx="167" cy="181" r="10" fill="#ffd166"/>
+  <circle cx="207" cy="110" r="10" fill="#31d0a0"/>
+</svg>

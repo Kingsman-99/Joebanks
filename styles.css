@@ -61,6 +61,18 @@ body {
   font-size: 1.05rem;
 }
 
+.brand-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.brand-logo {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.45rem;
+}
+
 .hero {
   padding: 4.5rem 0 3rem;
 }
