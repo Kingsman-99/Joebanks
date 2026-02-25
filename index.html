@@ -3,33 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joebanks Exchange</title>
+  <title>Joebanks Exchange | Personal Forex Mentorship</title>
+  <meta name="description" content="Joebanks Exchange offers personal forex mentorship, daily market insights, and practical trade support for beginner and intermediate traders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Joebanks Exchange</h1>
-    <p>Your Trusted Partner in Forex Trading</p>
-  </header>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container nav-row">
+        <p class="brand">Joebanks Exchange</p>
+        <a href="https://wa.me/8146490709" class="btn btn-nav">Start Chat</a>
+      </div>
+    </header>
 
-  <section class="content">
-    <h2>About Us</h2>
-    <p>At <strong>Joebanks Exchange</strong>, we provide reliable forex trading insights, currency exchange updates, and personalized financial strategies. Whether you’re a beginner or an experienced trader, we’re here to support your journey.</p>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="reveal">
+            <p class="eyebrow">Personal Forex Coach</p>
+            <h1>Trade Forex with Structure, Not Guesswork.</h1>
+            <p class="hero-text">
+              I help traders build confidence through practical mentorship, live market context, and repeatable risk management habits.
+            </p>
+            <div class="hero-actions">
+              <a href="https://wa.me/8146490709" class="btn">Chat on WhatsApp</a>
+              <a href="#services" class="btn btn-outline">View Services</a>
+            </div>
+          </div>
 
-    <h2>Services</h2>
-    <ul>
-      <li>Daily Forex Market Analysis</li>
-      <li>Currency Exchange Rates</li>
-      <li>1-on-1 Trading Mentorship</li>
-      <li>Exclusive Trading Signals</li>
-    </ul>
+          <aside class="hero-card reveal">
+            <h2>Market Focus</h2>
+            <ul>
+              <li>EUR/USD and GBP/USD trend setups</li>
+              <li>Major news session preparation</li>
+              <li>Clear entry, stop-loss, and target logic</li>
+              <li>Discipline-first trading journal reviews</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
 
-    <a href="https://wa.me/9021263330" class="btn">Chat with Us on WhatsApp</a>
+      <section id="services" class="section">
+        <div class="container">
+          <p class="eyebrow reveal">What I Offer</p>
+          <h2 class="section-title reveal">Forex Support Built Around Your Trading Journey</h2>
+          <div class="card-grid">
+            <article class="card reveal">
+              <h3>Daily Market Breakdown</h3>
+              <p>Receive concise analysis of key zones, momentum shifts, and high-impact events before major sessions.</p>
+            </article>
+            <article class="card reveal">
+              <h3>1-on-1 Mentorship</h3>
+              <p>Work directly with me to refine strategy, improve execution timing, and control emotional decision-making.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Trade Management Coaching</h3>
+              <p>Learn how to protect capital with better lot sizing, structured stop placement, and realistic targets.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Signal + Context Delivery</h3>
+              <p>Get curated signal ideas with the reason behind each setup, so you understand the trade before taking it.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  </section>
+      <section class="section section-accent">
+        <div class="container steps-grid">
+          <div class="reveal">
+            <p class="eyebrow">How Mentorship Works</p>
+            <h2 class="section-title">Simple Weekly Framework</h2>
+          </div>
+          <ol class="steps">
+            <li class="reveal"><span>01</span> Weekly goal setting and risk cap alignment.</li>
+            <li class="reveal"><span>02</span> Daily market bias and setup briefing.</li>
+            <li class="reveal"><span>03</span> Mid-week review of wins, losses, and discipline.</li>
+            <li class="reveal"><span>04</span> End-of-week strategy adjustments and next plan.</li>
+          </ol>
+        </div>
+      </section>
 
-  <footer>
-    <p>&copy; 2025 Joebanks Exchange. All rights reserved.</p>
-  </footer>
+      <section id="live-market" class="section">
+        <div class="container">
+          <p class="eyebrow reveal">Live Market</p>
+          <h2 class="section-title reveal">Current Forex and Crypto Prices</h2>
+          <p class="market-note reveal">
+            Data updates from public APIs. Click refresh anytime.
+          </p>
+
+          <div class="market-grid">
+            <article class="market-card reveal">
+              <div class="market-head">
+                <h3>Forex (Base: USD)</h3>
+                <span id="forex-status" class="status-pill">Loading...</span>
+              </div>
+              <ul id="forex-list" class="price-list"></ul>
+            </article>
+
+            <article class="market-card reveal">
+              <div class="market-head">
+                <h3>Crypto (USD)</h3>
+                <span id="crypto-status" class="status-pill">Loading...</span>
+              </div>
+              <ul id="crypto-list" class="price-list"></ul>
+            </article>
+          </div>
+
+          <div class="market-actions reveal">
+            <button id="refresh-market" class="btn btn-plain" type="button">Refresh Market Data</button>
+            <p id="market-time" class="market-time">Waiting for first update...</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="phone-sales" class="section section-accent">
+        <div class="container">
+          <p class="eyebrow reveal">Phone Sales</p>
+          <h2 class="section-title reveal">Joebanks Also Sells Phones</h2>
+          <p class="market-note reveal">
+            Explore iPhone, iPad, Google Pixel, and MacBook listings on a dedicated page.
+          </p>
+
+          <div class="phone-actions reveal">
+            <a href="phones.html" class="btn">View Latest Devices</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-box reveal">
+          <h2>Ready to Trade with More Clarity?</h2>
+          <p>Message Joebanks Exchange directly and get started with a personalized forex growth plan.</p>
+          <a href="https://wa.me/8146490709" class="btn">Book Your First Chat</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>&copy; 2026 Joebanks Exchange.</p>
+        <p>Forex Mentorship | Market Insight | Risk Discipline</p>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>

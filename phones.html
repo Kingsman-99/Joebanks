@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joebanks Devices | Latest Phones & Laptops</title>
+  <meta name="description" content="Latest iPhone, iPad, Google Pixel, and MacBook listings with current prices in Nigeria.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container nav-row">
+        <p class="brand">Joebanks Devices</p>
+        <a href="index.html" class="btn btn-nav">Back Home</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section devices-hero">
+        <div class="container">
+          <p class="eyebrow reveal">Device Store</p>
+          <h1 class="devices-title reveal">Latest iPhone, iPad, Google Pixel, and MacBook Prices</h1>
+          <p class="devices-note reveal">Data source: DummyJSON Products API (public and active). Tap any category to load current prices with product images.</p>
+
+          <div class="device-filters reveal">
+            <button class="btn btn-plain device-filter active" data-category="iphone" type="button">iPhone</button>
+            <button class="btn btn-plain device-filter" data-category="ipad" type="button">iPad</button>
+            <button class="btn btn-plain device-filter" data-category="pixel" type="button">Google Pixel</button>
+            <button class="btn btn-plain device-filter" data-category="macbook" type="button">MacBook</button>
+          </div>
+
+          <div class="device-status-row reveal">
+            <span id="devices-status" class="phone-status">Ready</span>
+            <p id="devices-time" class="market-time">No request yet.</p>
+          </div>
+
+          <div id="devices-grid" class="devices-grid reveal"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="phones.js"></script>
+</body>
+</html>
